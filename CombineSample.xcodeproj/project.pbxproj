@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66433286231FF5A000D3B7F1 /* LoginSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66433284231FF5A000D3B7F1 /* LoginSwiftUIView.swift */; };
 		66A06F7E231BF3B100A16EE0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A06F7D231BF3B100A16EE0 /* LoginViewModel.swift */; };
 		66D48D232313D36B00CD6845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D48D222313D36B00CD6845 /* AppDelegate.swift */; };
 		66D48D252313D36B00CD6845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D48D242313D36B00CD6845 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66433284231FF5A000D3B7F1 /* LoginSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwiftUIView.swift; sourceTree = "<group>"; };
 		66A06F7D231BF3B100A16EE0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		66D48D1F2313D36B00CD6845 /* CombineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D48D222313D36B00CD6845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66433282231FF5A000D3B7F1 /* SwiftUILogin */ = {
+			isa = PBXGroup;
+			children = (
+				66433284231FF5A000D3B7F1 /* LoginSwiftUIView.swift */,
+			);
+			path = SwiftUILogin;
+			sourceTree = "<group>";
+		};
 		66A06F7C231BF39E00A16EE0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		66D48D212313D36B00CD6845 /* CombineSample */ = {
 			isa = PBXGroup;
 			children = (
+				66433282231FF5A000D3B7F1 /* SwiftUILogin */,
 				66A06F7C231BF39E00A16EE0 /* Login */,
 				66D48D222313D36B00CD6845 /* AppDelegate.swift */,
 				66D48D242313D36B00CD6845 /* SceneDelegate.swift */,
@@ -151,6 +162,7 @@
 			files = (
 				66A06F7E231BF3B100A16EE0 /* LoginViewModel.swift in Sources */,
 				66D48D272313D36B00CD6845 /* LoginViewController.swift in Sources */,
+				66433286231FF5A000D3B7F1 /* LoginSwiftUIView.swift in Sources */,
 				66D48D232313D36B00CD6845 /* AppDelegate.swift in Sources */,
 				66D48D252313D36B00CD6845 /* SceneDelegate.swift in Sources */,
 			);

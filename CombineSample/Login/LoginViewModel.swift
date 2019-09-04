@@ -15,7 +15,7 @@ enum LoginState {
     case signInStarted
 }
 
-class LoginViewModel {
+class LoginViewModel: ObservableObject {
 
     @Published private(set) var loginState: LoginState = .signInDisabled {
         didSet {
@@ -27,17 +27,17 @@ class LoginViewModel {
         }
     }
 
-    var email: String? {
+    var email: String = "" {
         didSet { checkIsSignInEnabled() }
     }
-    var password: String? {
+    var password: String = "" {
         didSet { checkIsSignInEnabled() }
     }
 
     private func checkIsSignInEnabled() {
         guard loginState != .signInStarted else { return }
 
-        let isSingInEnabled = (!(email?.isEmpty ?? false)) && (!(password?.isEmpty ?? false))
+        let isSingInEnabled = !email.isEmpty && !password.isEmpty
         if isSingInEnabled {
             loginState = .signInEnabled
         } else {

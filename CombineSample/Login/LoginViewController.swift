@@ -36,6 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         emailPublisher = textFieldEmail
             .publisher(for: \.text)
+            .map({ guard let text = $0 else { return "" }; return text })
             .assign(to: \.email, on: viewModel)
 
         emailEditablePublisher = viewModel.$loginState
@@ -44,6 +45,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         passwordPublisher = textFieldPassword
             .publisher(for: \.text)
+            .map({ guard let text = $0 else { return "" }; return text })
             .assign(to: \.password, on: viewModel)
 
         passwordEditablePublisher = viewModel.$loginState
